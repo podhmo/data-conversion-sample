@@ -6,20 +6,10 @@ import sys
 from misc.utils import (
     FileOrPortOpener
 )
+from misc import generate
 
 # 実行結果を揃えるためにseedを指定
 random.seed(1)
-
-
-# 本来はmisc.nums的なものをimport
-def generate(N):
-    result = []
-    for _ in range(N):
-        i = random.random()
-        if random.random() > 0.5:
-            i = -i
-        result.append(i)
-    return result
 
 
 @as_command

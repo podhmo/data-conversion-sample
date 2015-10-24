@@ -2,25 +2,13 @@
 import json
 import os.path
 import sys
-import statistics
-from collections import OrderedDict
 from handofcats import as_command
 from misc.utils import (
     FileOrPortOpener,
     iterate_file_or_directory,
     get_dirpath_and_filepath
 )
-
-
-# 本来はmisc的なものをimport
-def get_summary(name, nums):
-    d = OrderedDict()
-    d["src"] = name
-    d["sum"] = sum(nums)
-    d["mean"] = statistics.mean(nums)
-    d["median"] = statistics.median(nums)
-    d["sd"] = statistics.stdev(nums)
-    return d
+from misc import get_summary
 
 
 @as_command

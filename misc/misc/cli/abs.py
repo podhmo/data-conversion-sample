@@ -7,11 +7,7 @@ from misc.utils import (
     iterate_file_or_directory,
     get_dirpath_and_filepath
 )
-
-
-# 本来はmisc的なものをimport
-def normalize(N):
-    return abs(N)
+from misc import normalize
 
 
 @as_command
