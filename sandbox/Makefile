@@ -3,7 +3,7 @@ TARGET ?= ""
 default: one two three
 	(test -f summary/${TARGET} && cat summary/${TARGET}) || echo ok
 setup:
-	pip install -e misc
+	pip install -e ../misc
 	pip install handofcats # or using argparse, click..
 one:
 	mkdir -p source
