@@ -94,7 +94,7 @@ python -m misc.cli.summary --outfile=summary/ normalizeed/
 ## 特定のファイルのみを対象として実行したい場合
 
 ```bash
-$ TARGET=001.json make default
+$ TARGET="001.json" make default
 mkdir -p source
 python -m misc.cli.nums --items=10 --nums=10 --outfile=source/
 ..........mkdir -p normalizeed
