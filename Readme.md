@@ -34,6 +34,44 @@ python -m misc.cli.abs --outfile=normalizeed/ source/
 python -m misc.cli.summary --outfile=summary/ normalizeed/
 ..........echo ok
 ok
+$ tree
+.
+├── Makefile
+├── normalized
+│   ├── 001.json
+│   ├── 002.json
+│   ├── 003.json
+│   ├── 004.json
+│   ├── 005.json
+│   ├── 006.json
+│   ├── 007.json
+│   ├── 008.json
+│   ├── 009.json
+│   └── 010.json
+├── source
+│   ├── 001.json
+│   ├── 002.json
+│   ├── 003.json
+│   ├── 004.json
+│   ├── 005.json
+│   ├── 006.json
+│   ├── 007.json
+│   ├── 008.json
+│   ├── 009.json
+│   └── 010.json
+└── summary
+    ├── 001.json
+    ├── 002.json
+    ├── 003.json
+    ├── 004.json
+    ├── 005.json
+    ├── 006.json
+    ├── 007.json
+    ├── 008.json
+    ├── 009.json
+    └── 010.json
+
+3 directories, 31 files
 ```
 
 ## 1ステップずつ実行したい場合
